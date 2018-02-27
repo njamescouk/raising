@@ -1,0 +1,6 @@
+data for can.csv with 10px thick disc
+"max height",1000
+"max outside radius",530
+"arc length ( = disc radius)",1499
+"inside radius at rim",500
+"thickness at rim",30.0
