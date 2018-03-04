@@ -9,7 +9,6 @@
 char *progname = 0;
 char *szVersion = "1.0";
  
-extern std::map<std::string, OptionSpec> cmdlineLexingSpecs;
 void usage(FILE *fp);
 void version(FILE *fp);
 
@@ -36,7 +35,6 @@ int main (int argc, char * argv[])
     specs["w"] = OptionSpec(true, "interval over which to compute tangent (default " + intToStr(tangentWindow) + ")");
     specs["t"] = OptionSpec(true, "thickness of initial disc (default " + intToStr(initialThickness) + ")");
     CmdLineSpec cls(specs);
-    cmdlineLexingSpecs = specs;
 
     pcldebug = 0;
     CmdLineParser clp(argc, argv, cls);
